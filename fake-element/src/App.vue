@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <communicate></communicate>
+    <!-- <communicate></communicate> -->
+    <LuoForm></LuoForm>
   </div>
 </template>
 
 <script>
-import communicate from '@/components/communication'
+// import communicate from '@/components/communication'
+import LuoForm from '@/components/LuoForm'
 export default {
   name: 'App',
   components: {
-    communicate
+    // communicate
+    LuoForm
   }
 }
 </script>
