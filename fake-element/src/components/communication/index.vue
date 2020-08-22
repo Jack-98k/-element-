@@ -1,7 +1,7 @@
 <template>
   <div>
     <child1></child1>
-    <child2></child2>
+    <child2 msg='efewfewef' @click="onClick"></child2>
     <button @click="goHome">回家吃饭</button>
   </div>
 </template>
@@ -19,6 +19,9 @@ export default {
   methods: {
     goHome () {
       this.$children[0].eat()
+    },
+    onClick () {
+      console.log('老爹的问候', this)
     }
   }
 }

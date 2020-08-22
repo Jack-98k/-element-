@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h3>child2</h3>
+    <!-- $listeners 会被展开并监听 -->
+    <h3 v-on="$listeners">child2</h3>
     <button @click="comToChild1('xxxxx111x')">给child1发送消息</button>
+    <p>{{ $attrs.msg }}</p>
   </div>
 </template>
 
