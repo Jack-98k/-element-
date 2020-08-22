@@ -11,6 +11,11 @@ export default {
     this.$parent.$on('event-from-child2', function (msg) {
       console.log('Child1: ', msg)
     })
+  },
+  methods: {
+    eat () {
+      console.log('马上回家')
+    }
   }
 }
 </script>

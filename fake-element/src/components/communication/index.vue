@@ -2,6 +2,7 @@
   <div>
     <child1></child1>
     <child2></child2>
+    <button @click="goHome">回家吃饭</button>
   </div>
 </template>
 
@@ -14,6 +15,11 @@ export default {
   components: {
     child1,
     child2
+  },
+  methods: {
+    goHome () {
+      this.$children[0].eat()
+    }
   }
 }
 </script>
