@@ -12,6 +12,11 @@ import child2 from '@/components/communication/child2.vue'
 
 export default {
   name: 'parent',
+  provide () {
+    return {
+      foo: 'foewfjoewjowe'
+    }
+  },
   components: {
     child1,
     child2
