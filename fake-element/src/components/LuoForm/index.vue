@@ -1,11 +1,11 @@
 <template>
   <div>
     <LuoForm :model="userInfo" :rules="rules">
-      <LuoFormItem lable="用户名">
-        <LuoInput v-model="userInfo.username"></LuoInput>
+      <LuoFormItem lable="用户名" prop="username">
+        <LuoInput v-model="userInfo.username" placeholder="请输入用户名"></LuoInput>
       </LuoFormItem>
-      <LuoFormItem lable="密码">
-        <LuoInput type="password" v-model="userInfo.password"></LuoInput>
+      <LuoFormItem lable="密码" prop="password">
+        <LuoInput type="password" v-model="userInfo.password" placeholder="请输入密码"></LuoInput>
       </LuoFormItem>
     </LuoForm>
   </div>
