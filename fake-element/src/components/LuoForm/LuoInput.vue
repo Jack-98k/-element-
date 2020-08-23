@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 自定义组件双向绑定：:value @input -->
-    <input :type="type" :value="value" @input="onInput" />
+    <input :type="type" :value="value" @input="onInput" v-bind="$attrs" />
   </div>
 </template>
 

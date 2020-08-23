@@ -1,20 +1,27 @@
 <template>
   <div>
-    <LuoFormItem lable="用户名">
-      <LuoInput v-model="userInfo.username"></LuoInput>
-    </LuoFormItem>
+    <LuoForm :model="userInfo" :rules="rules">
+      <LuoFormItem lable="用户名">
+        <LuoInput v-model="userInfo.username"></LuoInput>
+      </LuoFormItem>
+      <LuoFormItem lable="密码">
+        <LuoInput type="password" v-model="userInfo.password"></LuoInput>
+      </LuoFormItem>
+    </LuoForm>
   </div>
 </template>
 
 <script>
 import LuoInput from '@/components/LuoForm/LuoInput.vue'
 import LuoFormItem from '@/components/LuoForm/LuoFormItem.vue'
+import LuoForm from '@/components/LuoForm/LuoForm.vue'
 
 export default {
-  name: 'LuoForm',
+  name: 'LuoFormExample',
   components: {
     LuoInput,
-    LuoFormItem
+    LuoFormItem,
+    LuoForm
   },
   data () {
     return {
